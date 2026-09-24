@@ -380,6 +380,39 @@ A repeatable safety test should cover at least:
 - Smart-home IR action requested while moving.
 - Low battery detected while moving.
 
+### Milestone evidence for future build posts
+
+As each milestone works, capture material for two future posts: a smart home
+that routes requests with Jev, and the progression from a manually driven toy
+car toward supervised self-driving. Record the result at the time of testing
+instead of reconstructing it later. A milestone is only described as working
+when its exit criteria and relevant safety tests have actually passed.
+
+- **Diagrams:** update the hardware and software flow to show the components
+  that really ran, their connections, and where safety decisions were made.
+- **Logs:** save dated, reproducible command and telemetry samples, including
+  model version and structured input/output for any Jev experiment. Remove
+  credentials and private room or voice data before sharing.
+- **Failures:** keep a short record of what failed, how it was reproduced, the
+  cause if known, the fix, and the result after retesting. Include uncertain
+  Jev decisions and cases where the safe fallback was used.
+- **Latency measurements:** record the test setup, sample count, and latency
+  distribution. Measure both Jev request latency for smart-home routing and
+  end-to-end behavior, and separately measure Brobot's command-to-stop timing
+  for timeout, disconnect, and fault tests. Do not treat cloud inference speed
+  as a motor-safety guarantee.
+- **Demo clips:** capture short, dated videos of the actual milestone working,
+  including stop and failure behavior where relevant. Keep raw clips private
+  until people, screens, addresses, and other sensitive details are reviewed.
+
+Start with a baseline architecture diagram and smart-home regression evidence
+in Phase 0. Capture manual driving, telemetry, and stop tests in Phase 1;
+personality and LED behavior in Phase 2; companion API and Jev request-routing
+trials in Phase 3; perception and motion evidence in Phase 4; and shadow-mode
+Jev decisions plus supervised driving trials only if Phase 5 is reached.
+Publish conclusions that match the demonstrated scope, including unresolved
+failures and tests that still require physical hardware.
+
 ## 12. Licensing and source provenance
 
 The existing `pico-w-room-controller` repository uses the MIT License.
