@@ -349,6 +349,9 @@ AI navigation is still not assumed to be safe merely because a camera exists.
 - Voice or agent interaction.
 - Task planning with explicit constraints and audit logs.
 
+See [the Jev AI evaluation plan](JEV_AI_EVALUATION_PLAN.md) for a possible
+companion-side decision service and the prerequisites for testing it.
+
 This phase begins only after the earlier safety and motion requirements are
 demonstrably reliable.
 

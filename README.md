@@ -14,6 +14,8 @@ telemetry, and an emergency stop.
 
 See [the project plan](docs/PROJECT_PLAN.md) for the proposed architecture,
 protocol, safety requirements, hardware mapping, roadmap, and open decisions.
+See [the Jev AI evaluation plan](docs/JEV_AI_EVALUATION_PLAN.md) for a possible
+future companion-side decision service and its autonomy boundaries.
 
 ## Source projects
 
